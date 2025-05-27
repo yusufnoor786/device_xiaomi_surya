@@ -31,3 +31,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+MISTOS_MAINTAINER := Zabuka_Zuzu
