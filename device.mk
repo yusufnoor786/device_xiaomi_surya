@@ -26,10 +26,6 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
@@ -86,7 +82,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 $(call soong_config_set,camera,override_format_from_reserved,true)
-$(call soong_config_set,camera,libcameraservice_ext_lib,//$(LOCAL_PATH):libcameraservice_extension.sm6150)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -436,6 +431,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     android.hardware.wifi-service \
     hostapd \
     ipacm \
