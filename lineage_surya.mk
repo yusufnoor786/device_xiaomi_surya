@@ -31,3 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Bypass charging node /sys/class/power_supply/battery/input_suspend
+BYPASS_CHARGE_SUPPORTED := true
