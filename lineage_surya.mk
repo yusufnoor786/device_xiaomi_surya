@@ -34,3 +34,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Bypass charging node /sys/class/power_supply/battery/input_suspend
 BYPASS_CHARGE_SUPPORTED := true
+
+#MistOS
+MISTOS_MAINTAINER := Zabuka_Zuzu
+MIST_BUILD_TYPE := OFFICIAL
+TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_QUICK_TAP := true
