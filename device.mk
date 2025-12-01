@@ -33,6 +33,7 @@ $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer \
     XiaomiDolby
 
 # Dolby
