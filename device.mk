@@ -31,6 +31,13 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
+# Dolby
+TARGET_USES_DOLBY := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
