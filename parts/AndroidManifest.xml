@@ -18,7 +18,7 @@
         android:icon="@drawable/ic_application"
         android:label="@string/xiaomiparts_title"
         android:persistent="true"
-        android:theme="@style/Theme.SubSettingsBase">
+        android:theme="@style/Theme.SubSettingsBase.Expressive">
 
         <receiver android:name=".BootCompletedReceiver"
                   android:exported="false">
