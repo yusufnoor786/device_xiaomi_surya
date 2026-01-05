@@ -16,6 +16,10 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Dolby | Laica
+WITH_LAICA := true
+WITH_DOLBY := true
+
 # Gcam Go
 #$(call inherit-product, vendor/gcgop/config.mk)
 
@@ -40,6 +44,5 @@ MISTOS_MAINTAINER := Zabuka_Zuzu
 MIST_BUILD_TYPE := OFFICIAL
 TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_LAICA := true
 WITH_GMS := true
 TARGET_USES_PICO_GAPPS := true
